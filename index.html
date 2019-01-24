@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div id="searchContainer">
+        <input type="text" class="search" id="searchInput" placeholder="City Name or Zipcode">
+        <button class="search" id="searchBtn">Search</button>
+    </div>
+    <div id="weatherContainer">
+        <div id="weatherInfo">
+            <h1 id="cityName"></h1>
+            <div id="mainInfo">
+                <div id="temperature" ></div>
+                <div id="weatherDescription"></div>
+                <div><img id="iconImg"></div>
+            </div>
+            <hr>
+            <div class="details" id="wind"></div>
+            <div class="details" id="humidity"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -58,7 +58,7 @@ function init(infoFromServer){
     let cityNameElement = document.getElementById('cityName');
     let weatherIconElement = document.getElementById('iconImg');
 
-    weatherIconElement.src = 'http://openweathermap.org/img/w/' + infoFromServer.weather[0].icon + '.png';
+    weatherIconElement.src = 'https://openweathermap.org/img/w/' + infoFromServer.weather[0].icon + '.png';
     let weatherDescriptionRaw = infoFromServer.weather[0].description;
     weatherDescriptionElement.innerText = weatherDescriptionRaw.charAt(0).toUpperCase() + weatherDescriptionRaw.slice(1);
     cityNameElement.innerHTML = infoFromServer.name;
@@ -70,7 +70,7 @@ function init(infoFromServer){
 
 function weatherSearch(searchTerm){
     searchMethodType(searchTerm);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appKey}&units=${units}`).then(result =>{return result.json()})
+    fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appKey}&units=${units}`).then(result =>{return result.json()})
     .then(result =>{init(result)});
 }
 

@@ -21,6 +21,7 @@ body {
     border-radius: 10px;
     position: absolute;
     visibility: hidden;
+    max-width: 300px;
 }
 
 #weatherContainer h1 {
